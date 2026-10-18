@@ -1,0 +1,23 @@
+{
+  "name": "krea-editor",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k -n api,web -c blue,magenta \"node --watch server/index.js\" \"vite\"",
+    "build": "vite build",
+    "start": "vite build && node server/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "concurrently": "^9.0.1",
+    "vite": "^5.4.8"
+  }
+}
